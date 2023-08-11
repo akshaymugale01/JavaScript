@@ -1,0 +1,28 @@
+//I'm using vsCode in that use in terminal "npm install prompt-sync" to run prompt. 
+
+const prompt = require('prompt-sync')();
+
+let num1 = +prompt("Enter first value:")
+let num2 = +prompt("Enter Second Value:")
+let operator = prompt("Enter operator:")
+
+function simpleCalculator(num1, num2, operator){
+    switch(operator){
+        case '+' :
+            return num1+num2;
+        case "-" :
+            return num1-num2;
+        case "*" :
+            return num1*num2;
+        case '/' :
+            if(num2 ===0){
+                return " devided by 0 :0"
+            }else {
+                return num1/num2
+            }
+        break;
+        default : return "Not a valid Operator!"    
+    }
+}
+
+console.log(simpleCalculator(num1, num2, operator));
