@@ -1,2 +1,2 @@
 # JavaScript
-My journey from basics to Advanced JS,
+My journey from basics to Advanced JS.
